@@ -12,48 +12,28 @@
 <body>
 
     <div class="signup">
-<!-- this "x" is quite interesting -->
+        <!-- this "x" is quite interesting -->
         <div class="close_icon">ⓧ</div>
         <h1>Sign up</h1>
         <p>By signing up you agree to our terms and conditions.
-            Learn about our Privacy Policy before clicking "submit".</p>
+            Learn about our Privacy Policy before clicking "submit".
+        </p>
 
-        <form id="signup_form">
+        <form>
 
-            <input 
-            type="text" 
-            name="username" 
-            id="username" 
-            placeholder="username" 
-            />
+            <input type="text" name="username" id="username" placeholder="username" />
 
-            <input 
-            type="password" 
-            name="password" 
-            id="password" 
-            placeholder="password"
-            />
+            <input type="password" name="password" id="password" placeholder="password" />
 
-            <input 
-            type="password"
-            name="confirm_password" 
-            id="confirm_password" 
-            placeholder="confirm password"
-            />
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password" />
 
-            <fieldset>
-                <label for="agreed_terms">I agree to the terms and conditions.</label>
-                <input 
-                type="checkbox" 
-                name="agree_terms"
-                id="agree_terms"
-                />
-            </fieldset>
+            <!-- The for="" must be identical as id=""! -->
+            <label for="agreed_terms">
+                <input type="checkbox" name="agree_terms" id="agree_terms" />
+                I agree to the terms and conditions.
+            </label>
 
-            <input 
-            type="submit" 
-            value="submit" 
-            />
+            <input type="submit" value="submit" class="form_button" />
 
         </form>
 
@@ -63,10 +43,10 @@
 
         <div class="link_container">
             <a href="http://play.goole.com/store">
-                <img src="img/google-play-download.png" alt="Google logo">
+                <img src="img/google-play-download.png" alt="Google logo" />
             </a>
             <a href="http://apple.com/store">
-                <img src="img/app-store-download.png" alt="App Store logo">
+                <img src="img/app-store-download.png" alt="App Store logo" />
             </a>
         </div>
     </div>
